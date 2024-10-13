@@ -6,7 +6,6 @@ export default function ({ attr, weapon, artis, rule, def }) {
   if (weapon.name === '西风长枪') {
     title.push('西风枪')
     particularAttr.cpct = 100
-    particularAttr.dmg = 50
     particularAttr.recharge = 80
   }
   if (attr.cpct * 2 + attr.cdmg > 240) {
