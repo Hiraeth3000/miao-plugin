@@ -3,10 +3,11 @@ import { usefulAttr } from "../../artifact/artis-mark.js"
 export default function ({ attr, weapon, rule, def }) {
     let title = []
     let particularAttr = { ...usefulAttr['希诺宁'] }
-    if (weapon.name === '西风剑') {
-        title.push('西风剑')
+    if (weapon.name === '西风长枪') {
+        title.push('西风枪')
         particularAttr.cpct = 100
-    }
+        particularAttr.recharge = 80
+      }
     if (attr.cpct * 2 + attr.cdmg > 240) {
         title.push('战斗')
         particularAttr.cpct = 100
